@@ -19,6 +19,33 @@ h4 {
   font-weight: bold;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* HEADER */
 
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header img {
+  margin-right: auto;
+}
+
+header > a:first-of-type {
+  color: #0065fc;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  color: #f2f2f2;
+  border-bottom: 6px #f2f2f2;
+}
 /* FOOTER */

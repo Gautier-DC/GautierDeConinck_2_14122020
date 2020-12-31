@@ -30,6 +30,7 @@ header {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 header img {
@@ -39,13 +40,24 @@ header img {
 header > a:first-of-type {
   color: #0065fc;
   font-weight: bold;
+  font-size: 1.4em;
 }
 
 nav ul {
   list-style-type: none;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  color: #f2f2f2;
-  border-bottom: 6px #f2f2f2;
+  justify-content: space-around;
+  flex-basis: 50%;
+  min-width: 50%;
 }
+
+nav ul li {
+  color: #f2f2f2;
+  font-size: 1.4em;
+  border-bottom: 3px solid #f2f2f2;
+  padding: 1em;
+  align-self: stretch;
+}
+
 /* FOOTER */

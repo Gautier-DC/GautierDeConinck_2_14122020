@@ -5,7 +5,7 @@ body {
   font-family: "raleway", "sans-serif";
   color: #000000;
   background-color: #ffffff;
-  margin: 2em;
+  min-width: 255px;
 }
 
 h1 {
@@ -23,6 +23,10 @@ a {
   text-decoration: none;
 }
 
+#search_bar {
+  padding: 1em 2em;
+}
+
 /* HEADER */
 
 header {
@@ -34,6 +38,7 @@ header {
 }
 
 header img {
+  padding: 2em;
   margin-right: auto;
 }
 
@@ -41,23 +46,30 @@ header > a:first-of-type {
   color: #0065fc;
   font-weight: bold;
   font-size: 1.4em;
+  padding-right: 2em;
+}
+
+nav {
+  width: 100%;
 }
 
 nav ul {
+  padding: 0%;
+  margin: 0%;
   list-style-type: none;
-  width: 100%;
   display: flex;
-  justify-content: space-around;
-  flex-basis: 50%;
-  min-width: 50%;
+  justify-content: space-between;
 }
 
 nav ul li {
   color: #f2f2f2;
   font-size: 1.4em;
   border-bottom: 3px solid #f2f2f2;
-  padding: 1em;
-  align-self: stretch;
+  padding: 0.8em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50%;
 }
 
 /* FOOTER */

@@ -12,6 +12,7 @@ h1 {
   font-size: 1.5em;
   font-weight: bold;
 }
+
 h2,
 h3,
 h4 {
@@ -23,8 +24,53 @@ a {
   text-decoration: none;
 }
 
+/* SEARCH BAR SECTION */
+
 #search_bar {
   padding: 1em 2em;
+}
+
+form {
+  background-color: #f2f2f2;
+  height: 40px;
+  margin: 30px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  border: 1px solid #f2f2f2;
+  border-radius: 1em 1.3em 1.3em 1em;
+}
+
+label {
+  align-self: center;
+}
+
+i.fas.fa-map-marker-alt {
+  font-size: 1.5em;
+  text-align: center;
+  width: 40px;
+}
+
+#search_bar input {
+  border: 0px;
+  padding: 0 10px;
+  margin-right: -10px;
+  font-size: 1.3em;
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+#search_bar button {
+  background-color: #0065fc;
+  border: 0;
+  border-radius: 1em;
+  color: #f2f2f2;
+  font-size: 1.3em;
+  padding: 1.1em;
+}
+
+#search_bar button span {
+  display: none;
 }
 
 /* HEADER */
@@ -70,6 +116,18 @@ nav ul li {
   justify-content: center;
   align-items: center;
   min-width: 50%;
+}
+
+nav ul li a:visited {
+  color: #000000;
+}
+
+nav ul li:hover {
+  border-bottom: 3px solid #0065fc;
+}
+
+nav ul li:hover a {
+  color: #0065fc;
 }
 
 /* FOOTER */

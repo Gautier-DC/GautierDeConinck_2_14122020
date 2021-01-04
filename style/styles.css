@@ -1,22 +1,21 @@
 /* BODY */
 
 body {
-  font-size: 62.5%;
+  font-size: 1em;
   font-family: "raleway", "sans-serif";
   color: #000000;
   background-color: #ffffff;
-  min-width: 255px;
+  box-sizing: border-box;
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: bold;
 }
 
 h2,
 h3,
 h4 {
-  font-size: 1.2em;
   font-weight: bold;
 }
 
@@ -32,38 +31,33 @@ ul {
   list-style-type: none;
 }
 
-/* SEARCH BAR SECTION */
-
-#search_bar {
+section {
   padding: 1em 2em;
 }
 
+/* SEARCH BAR SECTION */
+
 form {
   background-color: #f2f2f2;
-  height: 40px;
-  margin: 30px 0 0px 0;
+  height: 3em;
+  margin: 30px 0 0 0;
   border: 1px solid #f2f2f2;
   border-radius: 1em 1.3em 1.3em 1em;
   display: flex;
   justify-content: flex-start;
-  align-items: stretch;
-}
-
-label {
-  align-self: center;
+  align-items: center;
 }
 
 i.fas.fa-map-marker-alt {
-  font-size: 1.5em;
   text-align: center;
-  width: 40px;
+  width: 3em;
 }
 
 #search_bar input {
   border: 0px;
+  height: 100%;
   padding: 0 10px;
   margin-right: -10px;
-  font-size: 1.3em;
   font-weight: bold;
   flex-grow: 1;
 }
@@ -71,10 +65,11 @@ i.fas.fa-map-marker-alt {
 #search_bar button {
   background-color: #0065fc;
   border: 0;
+  height: 100%;
   border-radius: 1em;
   color: #f2f2f2;
-  font-size: 1.3em;
-  padding: 1.1em;
+  font-size: 1em;
+  flex-basis: 3em;
 }
 
 #search_bar button span {
@@ -83,13 +78,7 @@ i.fas.fa-map-marker-alt {
 
 /* FILTERS */
 
-#filters {
-  padding: 0em 2em;
-  margin-top: 0;
-}
-
 #filters ul {
-  padding: 0;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -141,48 +130,49 @@ i.fas.fa-map-marker-alt {
   margin-right: 0.7em;
 }
 
+/* ACCOMODATION */
+
 /* HEADER */
 
 header {
+  text-align: center;
+  margin-top: 1.5em;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 
 header img {
-  padding: 2em;
-  margin-right: auto;
+  padding-left: 2em;
 }
 
 header > a:first-of-type {
   color: #0065fc;
   font-weight: bold;
-  font-size: 1.4em;
   padding-right: 2em;
 }
 
 nav {
   width: 100%;
+  margin-top: 1em;
 }
 
 nav ul {
-  padding: 0%;
-  margin: 0%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
 nav ul li {
   color: #000000;
-  font-size: 1.4em;
   border-bottom: 3px solid #f2f2f2;
   padding: 0.8em 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 50%;
+  flex-basis: 50%;
 }
 
 nav ul li:hover {

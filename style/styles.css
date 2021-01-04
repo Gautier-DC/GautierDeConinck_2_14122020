@@ -22,6 +22,7 @@ h4 {
 }
 
 a {
+  color: #000000;
   text-decoration: none;
 }
 
@@ -42,7 +43,7 @@ section {
 form {
   background-color: #f2f2f2;
   height: 3em;
-  margin: 30px 0 0 0;
+  margin-top: 2.3em;
   border: 1px solid #f2f2f2;
   border-radius: 1em 1.3em 1.3em 1em;
   display: flex;
@@ -112,8 +113,8 @@ i.fas.fa-map-marker-alt {
   background-color: #deebff;
   border-radius: 50%;
   text-align: center;
-  width: 3em;
-  padding: 1.1em 0;
+  line-height: 3.3em;
+  width: 3.3em;
   margin-right: 0.8em;
 }
 
@@ -126,6 +127,29 @@ i.fas.fa-map-marker-alt {
 }
 
 /* ACCOMODATION */
+
+#accomodation {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#accomodation article {
+  border: 2px solid #ffffff;
+  border-radius: 2em;
+  box-shadow: 0 0 10 px #d3d1d1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  object-fit: cover;
+}
+
+#accomodation article img {
+  object-fit: cover;
+}
 
 /* HEADER */
 
@@ -140,13 +164,13 @@ header {
 }
 
 header img {
-  padding-left: 2em;
+  padding-left: 1em;
 }
 
 header > a:first-of-type {
   color: #0065fc;
   font-weight: bold;
-  padding-right: 2em;
+  padding-right: 1em;
 }
 
 nav {

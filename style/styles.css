@@ -16,12 +16,20 @@ h1 {
 h2,
 h3,
 h4 {
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: bold;
 }
 
 a {
   text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
 }
 
 /* SEARCH BAR SECTION */
@@ -33,12 +41,12 @@ a {
 form {
   background-color: #f2f2f2;
   height: 40px;
-  margin: 30px 0;
+  margin: 30px 0 0px 0;
+  border: 1px solid #f2f2f2;
+  border-radius: 1em 1.3em 1.3em 1em;
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
-  border: 1px solid #f2f2f2;
-  border-radius: 1em 1.3em 1.3em 1em;
 }
 
 label {
@@ -73,6 +81,66 @@ i.fas.fa-map-marker-alt {
   display: none;
 }
 
+/* FILTERS */
+
+#filters {
+  padding: 0em 2em;
+  margin-top: 0;
+}
+
+#filters ul {
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#filters ul li {
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0.7em 1em 0;
+  padding-right: 1em;
+  border: 1px solid #d9d9d9;
+  border-left: none;
+  border-radius: 3em;
+}
+
+#filters ul li:hover {
+  color: #ffffff;
+  background-color: #0065fc;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0.7em 1em 0;
+  padding-right: 1em;
+  border: 1px solid #d9d9d9;
+  border-left: none;
+  border-radius: 3em;
+}
+
+#filters ul li i {
+  color: #0065fc;
+  background-color: #deebff;
+  font-size: 1.2em;
+  min-width: 3em;
+  max-height: 1em;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  margin-left: -0.2em;
+  padding: 1em 0.1em;
+}
+
+#filters p i {
+  color: #0065fc;
+  font-size: 1em;
+  padding: 0.5em 0.8em;
+  border: 1px solid #f2f2f2;
+  border-radius: 50%;
+  margin-right: 0.7em;
+}
+
 /* HEADER */
 
 header {
@@ -102,13 +170,12 @@ nav {
 nav ul {
   padding: 0%;
   margin: 0%;
-  list-style-type: none;
   display: flex;
   justify-content: space-between;
 }
 
 nav ul li {
-  color: #f2f2f2;
+  color: #000000;
   font-size: 1.4em;
   border-bottom: 3px solid #f2f2f2;
   padding: 0.8em 0;
@@ -116,10 +183,6 @@ nav ul li {
   justify-content: center;
   align-items: center;
   min-width: 50%;
-}
-
-nav ul li a:visited {
-  color: #000000;
 }
 
 nav ul li:hover {

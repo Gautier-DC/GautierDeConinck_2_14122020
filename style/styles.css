@@ -152,6 +152,7 @@ i.fas.fa-map-marker-alt {
 }
 
 #accomodation article a {
+  background-color: #ffffff;
   border: 4px solid #ffffff;
   border-radius: 1.5em;
   box-shadow: 0 0 0.5em #d8d6d6;
@@ -169,6 +170,54 @@ i.fas.fa-map-marker-alt {
   object-fit: cover;
   border-radius: 1.5em 1.5em 0 0;
 }
+
+/* POPULAR */
+
+aside {
+  padding: 1em 2em;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+aside article {
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+aside article a {
+  border: 4px solid #ffffff;
+  border-radius: 1.5em;
+  background-color: #ffffff;
+  box-shadow: 0 0 0.5em #d8d6d6;
+  max-height: 13em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.column_description {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+aside article a img {
+  box-sizing: border-box;
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.5em 0 0 1.5em;
+}
+
+/* Shared in Accomodation and Popular */
 
 article a p {
   font-size: 0.8em;

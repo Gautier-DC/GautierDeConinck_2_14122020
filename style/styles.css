@@ -8,6 +8,10 @@ body {
   box-sizing: border-box;
 }
 
+strong {
+  font-weight: bold;
+}
+
 h1 {
   font-size: 1.3em;
   font-weight: 900;
@@ -15,10 +19,14 @@ h1 {
 }
 
 h2,
-h3,
 h4 {
   font-weight: bold;
   margin-bottom: 1em;
+}
+
+h3 {
+  font-weight: bold;
+  padding: 0 1em 0 1em;
 }
 
 a {
@@ -129,7 +137,6 @@ i.fas.fa-map-marker-alt {
 /* ACCOMODATION */
 
 #accomodation {
-  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -137,18 +144,47 @@ i.fas.fa-map-marker-alt {
 }
 
 #accomodation article {
-  border: 2px solid #ffffff;
-  border-radius: 2em;
-  box-shadow: 0 0 10 px #d3d1d1;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#accomodation article a {
+  border: 4px solid #ffffff;
+  border-radius: 1.5em;
+  box-shadow: 0 0 0.5em #d8d6d6;
+  max-height: 13em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  object-fit: cover;
 }
 
-#accomodation article img {
+#accomodation article a img {
+  box-sizing: border-box;
+  width: 100%;
+  height: 60%;
   object-fit: cover;
+  border-radius: 1.5em 1.5em 0 0;
+}
+
+article a p {
+  font-size: 0.8em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  justify-self: start;
+}
+
+article a div {
+  color: #d9d9d9;
+  font-size: 0.8em;
+  padding: 0 1rem 0.8em 1rem;
+}
+
+.checked {
+  color: #0065fc;
 }
 
 /* HEADER */

@@ -44,6 +44,7 @@ ul {
 
 section {
   padding: 1em 1.2em;
+  margin-bottom: 1em;
 }
 
 #activities h2,
@@ -98,6 +99,7 @@ i.fas.fa-map-marker-alt {
 /* FILTERS */
 
 #filters ul {
+  margin-bottom: 0.5em;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -135,12 +137,20 @@ i.fas.fa-map-marker-alt {
   margin-right: 0.8em;
 }
 
-#filters p i {
+.fa-info {
   color: #0065fc;
   padding: 0.5em 0.8em;
   border: 1px solid #f2f2f2;
   border-radius: 50%;
   margin-right: 0.7em;
+  text-align: center;
+}
+
+#filters p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
 }
 
 /* ACCOMODATION */
@@ -187,6 +197,7 @@ i.fas.fa-map-marker-alt {
 
 aside {
   padding: 2em 1em 1em;
+  margin-bottom: 1em;
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
@@ -265,7 +276,6 @@ article a p {
   color: #d9d9d9;
   font-size: 0.8em;
   padding: 0 1rem 0 1rem;
-  margin-top: ;
 }
 
 .checked {
@@ -275,7 +285,6 @@ article a p {
 /* ACTIVITIES */
 
 #activities {
-  margin-top: 1em;
   margin-bottom: 1em;
   display: flex;
   flex-direction: column;

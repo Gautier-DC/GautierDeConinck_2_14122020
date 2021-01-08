@@ -15,13 +15,13 @@
 
   <body>
     <!-- HEADER -->
-    <header>
-      <img src="assets/img/logo/Reservia.svg" alt="logo reservia" />
+    <header class="d-flex-row">
+      <a href="#"><img src="assets/img/logo/Reservia.svg" alt="logo reservia" /></a>
       <a href="#">S'inscrire</a>
       <nav>
-        <ul>
-          <li><a href="#accomodation">Hébergements</a></li>
-          <li><a href="#activities">Activités</a></li>
+        <ul class="d-flex-row">
+          <li class="d-flex-row"><a href="#accomodation">Hébergements</a></li>
+          <li class="d-flex-row"><a href="#activities">Activités</a></li>
         </ul>
       </nav>
     </header>
@@ -31,7 +31,7 @@
       <section id="search_bar">
         <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
         <p>En plein centre ville ou en pleine nature</p>
-        <form action="#" method="post">
+        <form action="#" method="post" class="d-flex-row">
           <label for="search">
             <i class="fas fa-map-marker-alt"></i>
           </label>
@@ -45,28 +45,28 @@
 
       <section id="filters">
         <h2>Filtres</h2>
-        <ul>
-          <li>
+        <ul class="d-flex-row">
+          <li class="d-flex-row">
             <a href="#"><i class="fas fa-money-bill-wave"></i>Économique</a>
           </li>
-          <li>
+          <li class="d-flex-row">
             <a href="#"><i class="fas fa-child"></i>Familial</a>
           </li>
-          <li>
+          <li class="d-flex-row">
             <a href="#"><i class="fas fa-heart"></i>Romantique</a>
           </li>
-          <li>
+          <li class="d-flex-row">
             <a href="#"><i class="fas fa-dog"></i>Animaux autorisés</a>
           </li>
         </ul>
-        <p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+        <p class="d-flex-row"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
       </section>
 
-      <div id="find-a-room">
-        <section id="accomodation">
+      <div id="find-a-room" class="d-flex-row">
+        <section id="accomodation" class="d-flex-row">
           <h2>Hébergements à Marseille</h2>
-          <article>
-            <a href="#">
+          <article class="d-flex-column">
+            <a href="#" class="d-flex-column">
               <img src="assets/img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre d'hôtel la cannebière lits superposés" />
               <h3>Auberge La Cannebière</h3>
               <p>Nuit à partir de <strong>25€</strong></p>
@@ -81,8 +81,8 @@
             </a>
           </article>
 
-          <article>
-            <a href="#">
+          <article class="d-flex-column">
+            <a href="#" class="d-flex-column">
               <img src="assets/img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="chambre d'hôtel blanche hôtel du port" />
               <h3>Hôtel du port</h3>
               <p>Nuit à partir de <strong>52€</strong></p>
@@ -97,8 +97,8 @@
             </a>
           </article>
 
-          <article>
-            <a href="#">
+          <article class="d-flex-column">
+            <a href="#" class="d-flex-column">
               <img src="assets/img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="chambre d'hôtel grise hôtel les mouettes" />
               <h3>Hôtel les mouettes</h3>
               <p>Nuit à partir de <strong>76€</strong></p>
@@ -113,8 +113,8 @@
             </a>
           </article>
 
-          <article>
-            <a href="#">
+          <article class="d-flex-column">
+            <a href="#" class="d-flex-column">
               <img src="assets/img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="chambre d'hôtel blanche hôtel de la mer" />
               <h3>Hôtel de la mer</h3>
               <p>Nuit à partir de <strong>46€</strong></p>
@@ -129,8 +129,8 @@
             </a>
           </article>
 
-          <article>
-            <a href="#">
+          <article class="d-flex-column">
+            <a href="#" class="d-flex-column">
               <img src="assets/img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="chambre d'hôtel rustique auberge le panier" />
               <h3>Auberge le panier</h3>
               <p>Nuit à partir de <strong>23€</strong></p>
@@ -145,8 +145,8 @@
             </a>
           </article>
 
-          <article>
-            <a href="#">
+          <article class="d-flex-column">
+            <a href="#" class="d-flex-column">
               <img src="assets/img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="chambre d'hôtel blanche chez Amina" />
               <h3>Hôtel chez Amina</h3>
               <p>Nuit à partir de <strong>96€</strong></p>
@@ -163,15 +163,15 @@
           <a href="#"><strong>Afficher plus</strong></a>
         </section>
 
-        <aside id="popular">
+        <aside id="popular" class="d-flex-column">
           <!-- /!\ Put this aside before "hébergement à marseille" on mobile -->
 
           <h2>Les plus populaires<i class="fas fa-chart-line"></i></h2>
-          
-          <article>
-            <a href="#">
+
+          <article class="d-flex-row">
+            <a href="#" class="d-flex-row">
               <img src="assets/img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="chambre d'hôtel verte Soleil du matin" />
-              <div class="column_description">
+              <div class="column_description d-flex-column">
                 <h3>Hôtel Le soleil du matin</h3>
                 <p>Nuit à partir de <strong>128€</strong></p>
                 <div class="stars-rating">
@@ -186,10 +186,10 @@
             </a>
           </article>
 
-          <article>
-            <a href="#">
+          <article class="d-flex-row">
+            <a href="#" class="d-flex-row">
               <img src="assets/img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="chambre d'hôtel grise au coeur de l'eau" />
-              <div class="column_description">
+              <div class="column_description d-flex-column">
                 <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                 <p>Nuit à partir de <strong>71€</strong></p>
                 <div class="stars-rating">
@@ -204,13 +204,13 @@
             </a>
           </article>
 
-          <article>
-            <a href="#">
+          <article class="d-flex-row">
+            <a href="#" class="d-flex-row">
               <img
                 src="assets/img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                 alt="chambre d'hôtel blanche hôtel tout bleu et blanc"
               />
-              <div class="column_description">
+              <div class="column_description d-flex-column">
                 <h3>Hôtel Tout bleu et blanc</h3>
                 <p>Nuit à partir de <strong>68€</strong></p>
                 <div class="stars-rating">
@@ -227,7 +227,7 @@
         </aside>
       </div>
 
-      <section id="activities">
+      <section id="activities" class="d-flex-column">
         <h2>Activités à Marseille</h2>
         <a href="#">
           <figure>
@@ -272,7 +272,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer>
+    <footer class="d-flex-row">
       <div>
         <h4>A propos</h4>
         <ul>

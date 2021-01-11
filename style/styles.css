@@ -116,7 +116,8 @@ form .fa-map-marker-alt {
   align-items: center;
 }
 
-#filters ul li:hover, #filters ul li:active{
+#filters ul li:hover,
+#filters ul li:active {
   background-color: #deebff;
   border: 2px solid #deebff;
   border-left: none;
@@ -178,7 +179,6 @@ form .fa-map-marker-alt {
   width: 100%;
   height: 70%;
   margin-bottom: 0.5em;
-  object-fit: cover;
   border-radius: 1.2em 1.2em 0 0;
 }
 
@@ -219,7 +219,6 @@ aside article a img {
   box-sizing: border-box;
   width: 40%;
   height: 100%;
-  object-fit: cover;
   border-radius: 1.2rem 0 0 1.2rem;
   flex-basis: 0 0 40%;
 }
@@ -279,7 +278,6 @@ aside .column-description {
   box-shadow: 0 0 0.5em #d8d6d6;
   width: 100%;
   height: 75%;
-  object-fit: cover;
 }
 
 #activities figure figcaption {

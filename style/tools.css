@@ -12,3 +12,7 @@
   border-radius: 1.2em;
   box-shadow: 0 0 0.5em #d8d6d6;
 }
+
+.object-fit-cover {
+  object-fit: cover;
+}

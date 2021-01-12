@@ -1,11 +1,15 @@
 /* BODY */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-size: 1em;
   font-family: "Raleway", "sans-serif";
   color: #000000;
   background-color: #ffffff;
-  box-sizing: border-box;
+  min-width: 275px;
 }
 
 strong {
@@ -26,7 +30,6 @@ h4 {
 
 h3 {
   font-weight: bold;
-  padding: 0 1em 0 1em;
 }
 
 a {
@@ -50,8 +53,18 @@ section {
 #activities h2,
 #find-a-room h2 {
   font-size: 1.3rem;
-  display: flex;
   justify-content: space-between;
+  flex-basis: 100%;
+}
+
+/* card format */
+
+aside article a,
+#accomodation article a,
+#activities figure {
+  background-color: #ffffff;
+  border-radius: 1.2em;
+  box-shadow: 0 0 0.5em #d8d6d6;
 }
 
 /* SEARCH BAR SECTION */
@@ -72,12 +85,13 @@ form .fa-map-marker-alt {
 }
 
 #search-bar input {
-  border: 0px;
+  font-family: inherit;
+  border: 0;
   height: 100%;
-  padding: 0 10px;
-  margin-right: -10px;
+  padding: 0 1em;
+  margin-right: -1em;
   font-weight: bold;
-  flex: 1 1 50%;
+  flex-grow: 1;
 }
 
 #search-bar button {
@@ -86,7 +100,7 @@ form .fa-map-marker-alt {
   border: 0;
   line-height: 3em;
   border-radius: 1em;
-  color: #f2f2f2;
+  color: #ffffff;
   font-size: 1em;
   flex-basis: 3em;
 }
@@ -116,8 +130,7 @@ form .fa-map-marker-alt {
   align-items: center;
 }
 
-#filters ul li:hover,
-#filters ul li:active {
+#filters ul li:hover {
   background-color: #deebff;
   border: 2px solid #deebff;
   border-left: none;
@@ -128,8 +141,8 @@ form .fa-map-marker-alt {
   background-color: #deebff;
   border-radius: 50%;
   text-align: center;
-  line-height: 3.2em;
-  width: 3.2em;
+  line-height: 3em;
+  width: 3em;
   margin-right: 0.8em;
 }
 
@@ -143,43 +156,10 @@ form .fa-map-marker-alt {
 #filters .fa-info {
   color: #0065fc;
   line-height: 1.5em;
-  min-width: 1.5em;
   border: 1px solid #f2f2f2;
-  border-radius: 50%;
   margin-right: 0.7em;
   text-align: center;
-}
-
-/* ACCOMODATION */
-
-#accomodation {
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-#accomodation article {
-  margin-bottom: 1em;
-  width: 100%;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-#accomodation article a {
-  background-color: #ffffff;
-  border: 4px solid #ffffff;
-  height: 13em;
-  width: 100%;
-  padding-bottom: 0.5em;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-#accomodation article a img {
-  box-sizing: border-box;
-  width: 100%;
-  height: 70%;
-  margin-bottom: 0.5em;
-  border-radius: 1.2em 1.2em 0 0;
+  flex: 0 0 1.5em;
 }
 
 /* POPULAR */
@@ -191,7 +171,6 @@ aside {
   justify-content: space-between;
   flex-wrap: wrap;
   flex-basis: 100%;
-  order: -1;
 }
 
 aside .fa-chart-line {
@@ -200,38 +179,73 @@ aside .fa-chart-line {
 
 aside article {
   margin-bottom: 1em;
-  width: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
-  flex-basis: 0 0 100%;
+  flex-basis: 100%;
 }
 
 aside article a {
-  background-color: #ffffff;
   border: 4px solid #ffffff;
-  height: 10em;
-  width: 100%;
+  height: 150px;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-basis: 100%;
 }
 
 aside article a img {
-  box-sizing: border-box;
-  width: 40%;
   height: 100%;
   border-radius: 1.2rem 0 0 1.2rem;
-  flex-basis: 0 0 40%;
+  min-width: 45%;
+  flex-basis: 45%;
 }
 
-aside .column-description {
-  padding-top: 0.8rem;
-  height: 80%;
+aside article a .description {
+  padding: 1em;
+  height: 100%;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
-.column-description .stars-rating {
+aside article a .description p {
+  margin-top: 0.5em;
+}
+
+aside .description .stars-rating {
   margin-top: auto;
+}
+
+/* ACCOMODATION */
+
+#accomodation {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#accomodation article {
+  margin-bottom: 1em;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+}
+
+#accomodation article a {
+  border: 4px solid #ffffff;
+  height: 200px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#accomodation article a img {
+  width: 100%;
+  height: 60%;
+  border-radius: 1.2em 1.2em 0 0;
+}
+
+#accomodation .description {
+  height: 100%;
+  padding: 0.5em;
+  justify-content: space-around;
 }
 
 /* Shared in Accomodation and Popular */
@@ -242,16 +256,9 @@ aside .column-description {
   flex-wrap: wrap;
 }
 
-#find-a-room article a p {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  line-height: 2em;
-}
-
 .stars-rating {
   color: #d9d9d9;
   font-size: 0.8em;
-  padding: 0 1rem 0 1rem;
 }
 
 .stars-rating .checked {
@@ -267,7 +274,7 @@ aside .column-description {
 }
 
 #activities figure {
-  height: 13em;
+  height: 200px;
   width: 100%;
   background-color: #ffffff;
   margin-bottom: 1em;
@@ -275,7 +282,6 @@ aside .column-description {
 
 #activities figure img {
   border-radius: 1.2em 1.2em 0 0;
-  box-shadow: 0 0 0.5em #d8d6d6;
   width: 100%;
   height: 75%;
 }
@@ -295,7 +301,7 @@ header {
   flex-wrap: wrap;
 }
 
-header img {
+header > a:first-of-type {
   padding-left: 1em;
 }
 
@@ -348,5 +354,4 @@ footer div {
 
 footer div li {
   margin-bottom: 0.8em;
-  font-size: 0.9em;
 }

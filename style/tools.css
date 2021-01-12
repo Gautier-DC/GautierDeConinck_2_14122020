@@ -1,18 +1,19 @@
-.d-flex-row {
+.d-flex {
   display: flex;
+}
+
+.flex-row {
   flex-direction: row;
 }
 
-.d-flex-column {
-  display: flex;
+.flex-column {
   flex-direction: column;
-}
-
-.card-radius-and-shadow {
-  border-radius: 1.2em;
-  box-shadow: 0 0 0.5em #d8d6d6;
 }
 
 .object-fit-cover {
   object-fit: cover;
+}
+
+.circle {
+  border-radius: 50%;
 }

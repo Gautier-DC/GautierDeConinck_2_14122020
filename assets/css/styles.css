@@ -9,7 +9,6 @@ body {
   font-family: "Raleway", "sans-serif";
   color: #000000;
   background-color: #ffffff;
-  min-width: 275px;
 }
 
 strong {
@@ -165,12 +164,12 @@ form .fa-map-marker-alt {
 /* POPULAR */
 
 #popular {
-  width: 100%;
   padding: 2em 1em 1em;
   margin-bottom: 1em;
   background-color: #f2f2f2;
   justify-content: space-between;
   flex-wrap: wrap;
+  flex-basis: 100%;
 }
 
 #popular .fa-chart-line {
@@ -178,25 +177,29 @@ form .fa-map-marker-alt {
 }
 
 #popular article {
-  width: 100%;
   margin-bottom: 1em;
   justify-content: space-between;
   flex-wrap: wrap;
+  flex-basis: 100%;
 }
 
 #popular article a {
   border: 4px solid #ffffff;
-  width: 100%;
   height: 150px;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-basis: 100%;
 }
 
-#popular article a img {
+#popular article a div {
   height: 100%;
-  border-radius: 1.2rem 0 0 1.2rem;
-  min-width: 45%;
   flex-basis: 45%;
+}
+
+#popular article a div img {
+  height: 100%;
+  max-width: 100%;
+  border-radius: 1.2rem 0 0 1.2rem;
 }
 
 #popular article a .description {
@@ -204,6 +207,7 @@ form .fa-map-marker-alt {
   height: 100%;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-basis: 65%;
 }
 
 #popular article a .description p {
@@ -251,9 +255,8 @@ form .fa-map-marker-alt {
 /* Shared in Accomodation and Popular */
 
 #find-a-room {
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  flex-basis: 100%;
 }
 
 .stars-rating {

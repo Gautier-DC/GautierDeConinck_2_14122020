@@ -1,0 +1,19 @@
+.d-flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.circle {
+  border-radius: 50%;
+}

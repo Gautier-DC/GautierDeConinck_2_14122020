@@ -1,0 +1,381 @@
+/* BODY */
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/raleway/v18/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrE.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/raleway/v18/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pbCIPrE.woff2) format("woff2");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1em;
+  font-family: "Raleway", "sans-serif";
+  color: #000000;
+  background-color: #ffffff;
+  min-width: 275px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.3em;
+  font-weight: 900;
+  margin: 0.8em 0;
+}
+
+h2,
+h4 {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+section {
+  padding: 1em 1.2em;
+  margin-bottom: 1em;
+}
+
+#activities h2,
+#find-a-room h2 {
+  font-size: 1.3rem;
+  justify-content: space-between;
+  flex-basis: 100%;
+}
+
+/* card format */
+
+aside article a,
+#accomodation article a,
+#activities figure {
+  background-color: #ffffff;
+  border-radius: 1.2em;
+  box-shadow: 0 0 0.5em #d8d6d6;
+}
+
+/* SEARCH BAR SECTION */
+
+#search-bar form {
+  background-color: #f2f2f2;
+  height: 3em;
+  margin-top: 2.3em;
+  border: 1px solid #f2f2f2;
+  border-radius: 1em 1.3em 1.3em 1em;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+form .fa-map-marker-alt {
+  text-align: center;
+  width: 3em;
+}
+
+#search-bar input {
+  font-family: inherit;
+  border: 0;
+  height: 100%;
+  padding: 0 1em;
+  margin-right: -1em;
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+#search-bar button {
+  background-color: #0065fc;
+  text-align: center;
+  border: 0;
+  line-height: 3em;
+  border-radius: 1em;
+  color: #ffffff;
+  font-size: 1em;
+  flex-basis: 3em;
+}
+
+#search-bar button span {
+  display: none;
+}
+
+/* FILTERS */
+
+#filters ul {
+  margin-bottom: 0.5em;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#filters ul li {
+  font-weight: bold;
+  height: 3em;
+  margin: 0 0.8em 1em 0;
+  padding-right: 1em;
+  border: 2px solid #d9d9d9;
+  border-left: none;
+  border-radius: 3em;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#filters ul li:hover {
+  background-color: #deebff;
+  border: 2px solid #deebff;
+  border-left: none;
+}
+
+#filters ul li i {
+  color: #0065fc;
+  background-color: #deebff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3em;
+  width: 3em;
+  margin-right: 0.8em;
+}
+
+#filters p {
+  line-height: 1.5em;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: center;
+}
+
+#filters .fa-info {
+  color: #0065fc;
+  line-height: 1.5em;
+  border: 1px solid #f2f2f2;
+  margin-right: 0.7em;
+  text-align: center;
+  flex: 0 0 1.5em;
+}
+
+/* POPULAR */
+
+#popular {
+  padding: 2em 1em 1em;
+  margin-bottom: 1em;
+  background-color: #f2f2f2;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+}
+
+#popular .fa-chart-line {
+  font-size: 1.3em;
+}
+
+#popular article {
+  margin-bottom: 1em;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+}
+
+#popular article a {
+  border: 4px solid #ffffff;
+  height: 150px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-basis: 100%;
+}
+
+#popular article a figure {
+  height: 100%;
+  flex-basis: 45%;
+}
+
+#popular article a figure img {
+  height: 100%;
+  max-width: 100%;
+  width: 100%;
+  border-radius: 1.2rem 0 0 1.2rem;
+}
+
+#popular article a .description {
+  padding: 1em;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-basis: 65%;
+}
+
+#popular article a .description p {
+  margin-top: 0.5em;
+}
+
+#popular .description .stars-rating {
+  margin-top: auto;
+}
+
+/* ACCOMODATION */
+
+#accomodation {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#accomodation article {
+  margin-bottom: 1em;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+}
+
+#accomodation article a {
+  border: 4px solid #ffffff;
+  height: 200px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#accomodation article a img {
+  width: 100%;
+  height: 60%;
+  border-radius: 1.2em 1.2em 0 0;
+}
+
+#accomodation .description {
+  height: 100%;
+  padding: 0.5em;
+  justify-content: space-around;
+}
+
+/* Shared in Accomodation and Popular */
+
+#find-a-room {
+  flex-wrap: nowrap;
+  flex-basis: 100%;
+}
+
+.stars-rating {
+  color: #d9d9d9;
+  font-size: 0.8em;
+}
+
+.stars-rating .checked {
+  color: #0065fc;
+}
+
+/* ACTIVITIES */
+
+#activities {
+  margin-bottom: 1em;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#activities figure {
+  height: 200px;
+  width: 100%;
+  background-color: #ffffff;
+  margin-bottom: 1em;
+}
+
+#activities figure img {
+  border-radius: 1.2em 1.2em 0 0;
+  width: 100%;
+  height: 70%;
+}
+
+#activities figure figcaption {
+  height: 30%;
+  padding: 0 1em;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* HEADER */
+
+header {
+  text-align: center;
+  margin-top: 1.5em;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header > a:first-of-type {
+  padding-left: 1em;
+}
+
+header > a:nth-child(2) {
+  color: #0065fc;
+  font-weight: bold;
+  padding-right: 1em;
+}
+
+nav {
+  width: 100%;
+  margin-top: 1em;
+}
+
+nav ul {
+  justify-content: space-between;
+}
+
+nav ul li {
+  color: #000000;
+  border-bottom: 3px solid #f2f2f2;
+  padding: 0.8em 0;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
+}
+
+nav ul li:hover {
+  border-bottom: 3px solid #0065fc;
+}
+
+nav ul li:hover a {
+  color: #0065fc;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #f2f2f2;
+  padding: 2em 1em 0 1em;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+footer div {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+footer div li {
+  margin-bottom: 0.8em;
+}

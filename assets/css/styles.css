@@ -490,7 +490,7 @@ footer div li {
   }
 }
 
-@media only screen and (min-width: 768px) {  
+@media only screen and (min-width: 768px) {
   /* POPULAR */
 
   #popular {
@@ -513,5 +513,81 @@ footer div li {
   #popular article a .description {
     flex-basis: 70%;
   }
+}
 
+@media only screen and (min-width: 992px) {
+  /* BODY */
+
+  section {
+    padding: 2em 3em 0em;
+  }
+
+  #find-a-room {
+    flex-direction: row;
+    padding: 1em 3em;
+  }
+
+  /* POPULAR */
+
+  #popular {
+    margin-right: 0;
+    margin-bottom: 1em;
+    padding: 2em;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 35%;
+    order: 1;
+  }
+
+  #popular h2 {
+    flex: 0;
+  }
+
+  #popular article {
+    height: 180px;
+    flex: 0;
+  }
+
+  #popular article a {
+    height: 180px;
+  }
+
+  #popular article a figure {
+    flex-basis: 35%;
+  }
+
+  #popular article a .description {
+    flex-basis: 65%;
+  }
+
+  /* ACCOMODATION */
+
+  #accomodation {
+    background-color: #f2f2f2;
+    border-radius: 1.2em;
+    margin-right: 1em;
+    padding: 2em 2em;
+    flex-basis: 65%;
+  }
+
+  #activities a {
+    margin-bottom: 2em;
+    flex-basis: 30%;
+  }
+
+  /* HEADER */
+
+  header > a:first-of-type {
+    padding-left: 3em;
+  }
+
+  header > a:nth-child(2) {
+    padding-right: 3em;
+  }
+
+  /* FOOTER */
+
+  footer {
+    padding: 2em 3em 0;
+  }
 }

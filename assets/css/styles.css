@@ -104,6 +104,7 @@ form .fa-map-marker-alt {
   height: 100%;
   padding: 0 1em;
   margin-right: -1em;
+  font-size: 1.1em;
   font-weight: bold;
   flex-grow: 1;
 }
@@ -193,14 +194,14 @@ form .fa-map-marker-alt {
 
 #popular article {
   margin-bottom: 1em;
+  height: 150px;
   justify-content: space-between;
   flex-wrap: wrap;
-  flex-basis: 100%;
 }
 
 #popular article a {
   border: 4px solid #ffffff;
-  height: 150px;
+  height: 100%;
   justify-content: flex-start;
   align-items: flex-start;
   flex-basis: 100%;
@@ -260,6 +261,7 @@ form .fa-map-marker-alt {
   width: 100%;
   height: 60%;
   border-radius: 1.2em 1.2em 0 0;
+  object-position: 50% 75%;
 }
 
 #accomodation .description {
@@ -460,16 +462,19 @@ footer div li {
 
   header > a:nth-child(2) {
     order: 1;
+    text-align: right;
+    flex-basis: 10%;
   }
 
   nav {
     margin-top: 0;
+    max-width: 350px;
     flex-basis: 40%;
   }
 
   nav ul li {
     border-bottom: 0;
-    justify-content: space-around;
+    text-align: right;
   }
 
   nav ul li:hover {
@@ -490,7 +495,7 @@ footer div li {
   }
 }
 
-@media only screen and (min-width: 768px) {  
+@media only screen and (min-width: 768px) {
   /* POPULAR */
 
   #popular {
@@ -513,5 +518,50 @@ footer div li {
   #popular article a .description {
     flex-basis: 70%;
   }
+}
 
+@media only screen and (min-width: 992px) {
+  /* BODY */
+
+  section {
+    padding: 2em 3em 0em;
+  }
+
+  /* POPULAR */
+  #popular {
+    margin: 1em 3em 0;
+  }
+
+  /* ACCOMODATION */
+
+  #accomodation article {
+    flex-basis: 30%;
+  }
+
+  #accomodation a:nth-child(8) {
+    flex-basis: 100%;
+  }
+
+  /* ACTIVITIES */
+
+  #activities a {
+    margin-bottom: 2em;
+    flex-basis: 30%;
+  }
+
+  /* HEADER */
+
+  header > a:first-of-type {
+    padding-left: 3em;
+  }
+
+  header > a:nth-child(2) {
+    padding-right: 3em;
+  }
+
+  /* FOOTER */
+
+  footer {
+    padding: 2em 3em 0;
+  }
 }

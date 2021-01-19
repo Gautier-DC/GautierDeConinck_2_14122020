@@ -565,3 +565,88 @@ footer div li {
     padding: 2em 3em 0;
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  /* BODY */
+
+  body{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  section {
+    padding: 2em 3em 0em;
+  }
+
+  #find-a-room {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 3em;
+  }
+
+  /* POPULAR */
+
+  #popular {
+    margin: 0;
+    padding: 2em;
+    height: 630px;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 30%;
+    order: 1;
+  }
+
+  #popular h2 {
+    flex: 0;
+  }
+
+  #popular article{
+    flex: 0 0 150px;
+  }
+
+  #popular article a figure {
+    flex-basis: 35%;
+  }
+
+  #popular article a .description {
+    flex-basis: 65%;
+  }
+
+  /* ACCOMODATION */
+
+  #accomodation {
+    background-color: #f2f2f2;
+    border-radius: 1.2em;
+    height: 630px;
+    margin-right: 1em;
+    padding: 2em 2em;
+    flex-basis: 67%;
+  }
+
+  #accomodation article {
+    flex-basis: 31%
+  }
+
+  /* ACTIVITIES */
+
+  #activities a {
+    margin-bottom: 2em;
+    flex-basis: 30%;
+  }
+
+  /* HEADER */
+
+  header > a:first-of-type {
+    padding-left: 3em;
+  }
+
+  header > a:nth-child(2) {
+    padding-right: 3em;
+  }
+
+  /* FOOTER */
+
+  footer {
+    padding: 2em 3em 0;
+  }
+}

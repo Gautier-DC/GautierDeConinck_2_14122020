@@ -458,10 +458,11 @@ footer div li {
     flex-basis: 100%;
   }
 
-  #activities #col-2 a , #activities #col-4 a {
+  #activities #col-2 a,
+  #activities #col-4 a {
     flex-basis: 48%;
   }
-  
+
   #activities #col-2 {
     order: 1;
   }
@@ -501,6 +502,11 @@ footer div li {
   }
 
   /* FOOTER */
+
+  footer .container{
+    flex-basis: 100%;
+    justify-content: space-between;
+  }
 
   footer div {
     flex-basis: 32%;
@@ -571,28 +577,27 @@ footer div li {
     justify-content: space-between;
     flex-basis: 65%;
   }
-   
-  #activities #col-1{
-    order:0;
+
+  #activities #col-1 {
+    order: 0;
   }
 
-  #activities #col-2{
-    order:1;
-  }
-  
-  #activities #col-3{
-    order:2;
+  #activities #col-2 {
+    order: 1;
   }
 
-  #activities #col-4{
-    order:3;
+  #activities #col-3 {
+    order: 2;
   }
-  
+
+  #activities #col-4 {
+    order: 3;
+  }
+
   #activities #col-2 a,
-  #activities #col-4 a{
+  #activities #col-4 a {
     flex-basis: 46%;
   }
-  
 
   /* HEADER */
 
@@ -613,10 +618,11 @@ footer div li {
 
 @media only screen and (min-width: 1200px) {
   /* BODY */
-
-  body {
+ 
+  header , main {
     max-width: 1440px;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   section {
@@ -675,39 +681,65 @@ footer div li {
   /* ACTIVITIES */
 
   #activities {
+    margin-bottom: 4em;
     flex-direction: row;
   }
 
-  #activites div {
+  #activities div {
+    flex-direction: column;
+    flex: 0 0 25%;
+    order: initial;
+  }
+
+  #activities #col-1,
+  #activities #col-3 {
     height: 445px;
-    flex-basis: 30%;
+    flex-direction: column;
+    flex-basis: 22%;
+  }
+
+  #activities #col-2,
+  #activities #col-4 {
+    height: 445px;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 22%;
   }
 
   #activities div a {
-    width: 100%;
+    margin-bottom: 0;
   }
 
-  #activities div a figure {
-    width: 100%;
+  #activities #col-1 a {
+    flex-basis: 100%;
   }
 
-  #activities div a:nth-of-type(1) {
-    flex-basis: 100%;
+  #activities #col-2 > a:first-child {
+    height: 235px;
+    flex: 0;
   }
-  #activities div a:nth-of-type(2) {
-    flex-basis: 65%;
+
+  #activities #col-2 > a:nth-child(2) {
+    height: 165px;
+    flex: 0;
   }
-  #activities div a:nth-of-type(3) {
-    flex-basis: 35%;
+
+  #activities #col-4 > a:first-child {
+    height: 165px;
+    flex: 0;
   }
-  #activities div a:nth-of-type(4) {
-    flex-basis: 100%;
+
+  #activities #col-4 > a:nth-child(2) {
+    flex: 0 0 235px;
   }
-  #activities div a:nth-of-type(5) {
-    flex-basis: 35%;
+
+  #activities div a figure img {
+    flex: 1;
+    height: 60%;
   }
-  #activities div a:nth-of-type(6) {
-    flex-basis: 65%;
+
+  #activities div a figure figcaption {
+    flex: 0 0 55px;
   }
 
   /* HEADER */
@@ -723,6 +755,16 @@ footer div li {
   /* FOOTER */
 
   footer {
+    padding: 0;
+  }
+  
+  footer .container {
     padding: 2em 3em 0;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  footer .container div{
+    flex-basis: 30%
   }
 }

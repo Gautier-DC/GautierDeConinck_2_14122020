@@ -23,7 +23,7 @@ body {
   font-family: "Raleway", "sans-serif";
   color: #000000;
   background-color: #ffffff;
-  min-width: 275px;
+  min-width: 300px;
 }
 
 strong {
@@ -86,6 +86,7 @@ aside article a,
 #search-bar form {
   background-color: #f2f2f2;
   height: 3em;
+  width: 100%;
   margin-top: 2.3em;
   border: 1px solid #f2f2f2;
   border-radius: 1em 1.3em 1.3em 1em;
@@ -98,15 +99,16 @@ form .fa-map-marker-alt {
   width: 3em;
 }
 
-#search-bar input {
+#search-bar form input {
   font-family: inherit;
   border: 0;
   height: 100%;
+  width: 50%;
   padding: 0 1em;
   margin-right: -1em;
   font-size: 1.1em;
   font-weight: bold;
-  flex-grow: 1;
+  flex: 1;
 }
 
 #search-bar button {
@@ -117,7 +119,7 @@ form .fa-map-marker-alt {
   border-radius: 1em;
   color: #ffffff;
   font-size: 1em;
-  flex-basis: 3em;
+  flex: 0 0 3em;
 }
 
 #search-bar button span {

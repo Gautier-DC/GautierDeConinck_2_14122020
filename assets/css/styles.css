@@ -312,6 +312,14 @@ form .fa-map-marker-alt {
   height: 70%;
 }
 
+#activities #col-4 > a:first-child figure img {
+  object-position: 50% 20%;
+}
+
+#activities #col-4 > a:nth-of-type(2) figure img {
+  object-position: 50% 40%;
+}
+
 #activities div a figure figcaption {
   height: 30%;
   padding: 0 1em;
@@ -505,7 +513,7 @@ footer div li {
 
   /* FOOTER */
 
-  footer .container{
+  footer .container {
     flex-basis: 100%;
     justify-content: space-between;
   }
@@ -620,8 +628,9 @@ footer div li {
 
 @media only screen and (min-width: 1200px) {
   /* BODY */
- 
-  header , main {
+
+  header,
+  main {
     max-width: 1440px;
     margin-right: auto;
     margin-left: auto;
@@ -759,14 +768,14 @@ footer div li {
   footer {
     padding: 0;
   }
-  
+
   footer .container {
     padding: 2em 3em 0;
     max-width: 1440px;
     margin: 0 auto;
   }
 
-  footer .container div{
-    flex-basis: 30%
+  footer .container div {
+    flex-basis: 30%;
   }
 }
